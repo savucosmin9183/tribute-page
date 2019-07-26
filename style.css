@@ -1,32 +1,33 @@
-body,html{
-  margin:0;
-  padding:0;
-  height:100%;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-#div-img{
+
+.div-img {
   height: 100vh;
 }
-#imag{
-height:100vh;
-width:100%;
+
+.imag {
+  height: 100vh;
+  width: 100%;
 }
-#image{
+
+.image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-
 }
 
-
-#menu{
+.menu {
   display: flex;
-  padding:0;
-  margin:0;
-  position:fixed;
+  padding: 0;
+  margin: 0;
+  position: fixed;
   flex-direction: column;
-  width:100px;
+  width: 100px;
   height: 300px;
   background-color: rgba(0, 100, 256, 0.4);
   justify-content: space-around;
@@ -36,41 +37,44 @@ width:100%;
   z-index: 99;
 }
 
-.option{
-
+.option {
   text-align: center;
 }
-.ball{
+
+.ball {
   width: 30px;
   height: 30px;
-  transition:0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
-.ball:hover{
-  width:50px;
-  height:50px;
+
+.ball:hover {
+  width: 50px;
+  height: 50px;
 }
-.item{
+
+.item {
   padding: 0;
-  margin:0;
+  margin: 0;
   font-size: 15px;
   font-family: Merriweather;
   color: Black
 }
-#div-caption{
+
+.div-caption {
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 60px;
-  font-family: Copasetic;
   font-weight: 400;
   letter-spacing: 2px;
   font-family: Merriweather;
   color: Black;
   z-index: 100;
 }
+
 h2 {
   margin: 0;
   padding: 32px 0;
@@ -78,37 +82,39 @@ h2 {
   color: black;
   font-style: Merriweather;
   background-color: hsl(42, 97%, 53%);
-  font-family: Copasetic;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 40px;
-  border-bottom: 2px solid #2b1c13;
+  border-bottom: 2px solid .2b1c13;
 }
-#wrapper{
-width: 90%;
-max-width: 1000px;
-margin: 0 auto;
-padding:30px;
-display:flex;
 
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
 }
-.left-column{
-visibility: visible;
-height: 1433px;
-width:340px;
-padding-right: 50px;
+
+.left-column {
+  visibility: visible;
+  height: 1433px;
+  width: 340px;
+  padding-right: 50px;
 }
-.img-Hagi{
-visibility: visible;
+
+.img-Hagi {
+  visibility: visible;
 }
-#hagi-pic{
+
+.hagi-pic {
   width: 100%;
 }
 
 h5 {
   font-size: 12px;
-  border-bottom: 1px solid #e2d3cb;
-  border-top: 1px dashed #e2d3cb;
+  border-bottom: 1px solid .e2d3cb;
+  border-top: 1px dashed .e2d3cb;
   color: black;
   padding: 5px 0;
   display: block;
@@ -119,20 +125,23 @@ h5 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .left-column p {
   color: black;
   line-height: 20px;
 }
-.right-column{
-width: 65%;
-padding: 0;
-margin:0;
+
+.right-column {
+  width: 65%;
+  padding: 0;
+  margin: 0;
 }
-.big{
-font-weight: 700;
-font-size: 18px;
-margin-top: 0;
-font-family: 'Open Sans',sans-serif;
+
+.big {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .right-column p {
@@ -141,29 +150,32 @@ font-family: 'Open Sans',sans-serif;
   text-align: justify;
   color: black;
 }
-#bio h4 {
-  font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+
+.bio h4 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px;
-  border-bottom: 2px solid #e2d3cb;
-  border-top: 1px dashed #e2d3cb;
+  border-bottom: 2px solid .e2d3cb;
+  border-top: 1px dashed .e2d3cb;
   color: black;
   width: 100%;
   padding: 10px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#coaching-page{
-display:flex;
+
+.coaching-page {
+  display: flex;
 }
+
 .box {
   height: 450px;
   flex-basis: 100%;
   overflow: hidden;
-  box-shadow: inset 0 10px 60px rgba(0,0,0,.5);
+  box-shadow: inset 0 10px 60px rgba(0, 0, 0, .5);
 }
 
 .team {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
@@ -171,24 +183,27 @@ display:flex;
   padding: 10px;
   box-sizing: border-box;
 }
-#tribute-link{
+
+.tribute-link {
   text-align: center;
   margin-top: auto;
 }
+
 .box h3 {
   margin: 0;
   padding: 0 0 10px;
   color: Black;
-  border-bottom: 2px solid #d76f38;
+  border-bottom: 2px solid .d76f38;
   display: inline-block;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-weight: 400;
   word-wrap: break-word;
 }
+
 .box p {
-  border-top: 1px solid #d76f38;
+  border-top: 1px solid .d76f38;
   font-size: 14px;
   line-height: 20px;
   color: Black;
@@ -196,66 +211,114 @@ display:flex;
   padding: 15px 0 0;
   width: 100%;
 }
-.badge{
-width:150px;
-height: auto;
 
-
+.badge {
+  width: 150px;
+  height: auto;
 }
 
-#side-info{
+.side-info {
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width:450px){
-  #coaching-page{
-  display:flex;
-  flex-direction: column;
+@media screen and (max-width:450px) {
+  .coaching-page {
+    flex-direction: column;
   }
-  #menu{
-    position:absolute;
-    top:5%;
-    width:50px;
-    height: 100px;
 
+  .menu {
+    position: absolute;
+    top: 5%;
+    width: 50px;
+    height: 200px;
   }
-  .ball{
-    width: 15px;
-    height: 15px;
+
+  .ball {
+    width: 20px;
+    height: 20px;
   }
-  .ball:hover{
-    width:25px;
-    height:25px;
+
+  .ball:hover {
+    width: 30px;
+    height: 30px;
   }
-  .item{
+
+  .item {
     font-size: 10px;
-
   }
-  #image{
-    width:350px;
+
+  .image {
+    width: 350px;
     height: auto;
   }
-  #div-caption{
-    font-size:30px;
+
+  .div-caption {
+    font-size: 30px;
     top: 80%;
     left: 18%;
     transform: translate(-0, -0);
   }
-  .left-column{
+
+  .left-column {
     visibility: hidden;
     display: none;
   }
-  #wrapper{
+
+  .wrapper {
     width: 90%;
     max-width: 1000vh;
     margin: 0 auto;
-    padding:0px;
-    padding-top:30px;
-    display:flex;
+    padding: 0px;
+    padding-top: 30px;
+    display: flex;
   }
-  .right-column{
-    width:100%;
-    text-align:center;
+
+  .right-column {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:451px) and (max-width:850px) {
+  .image {
+    width: 400px;
+    height: auto;
+  }
+
+  .menu {
+    position: absolute;
+    top: 5%;
+    width: 80px;
+    height: 300px;
+  }
+
+  .div-caption {
+    font-size: 30px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-80, -50);
+  }
+
+  .coaching-page {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 0 50%;
+  }
+
+  .badge {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width:851px) and (max-width:1050px) {
+  .coaching-page {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 0 50%;
   }
 }
