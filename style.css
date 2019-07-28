@@ -1,18 +1,32 @@
+/*
+ De ce ai pus astea aici? Nu stau sa ma uit da daca imi explici de ce e ok.
+ - 
+*/
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
+
+/*
+ Div-img nu e un nume ok
+*/
 .div-img {
   height: 100vh;
 }
 
+/*
+ nume naspa
+*/
 .imag {
   height: 100vh;
   width: 100%;
 }
 
+/*
+ nume naspa
+*/
 .image {
   position: absolute;
   top: 50%;
@@ -20,7 +34,27 @@ body, html {
   transform: translate(-50%, -50%);
   z-index: 99;
 }
+/*
+ Cand ai multe linii de cod css organizeaza-le intr-un fel gen. Eu asa as face:
 
+  
+  position: fixed;
+  z-index: 99;
+  top: 10%;
+  left: 0px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  width: 100px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+
+  background-color: rgba(0, 100, 256, 0.4);
+  list-style-type: none;
+*/
 .menu {
   display: flex;
   padding: 0;
@@ -37,6 +71,14 @@ body, html {
   z-index: 99;
 }
 
+/*
+  Nume naspa. Incearca formatul:
+    <ul class="nume-clasa">
+      <li class="nume-clasa__entry">
+        <img class="nume-clasa__thumbnail"> <-- asta on loc de .ball
+      </li>
+    </ul>
+*/
 .option {
   text-align: center;
 }
@@ -54,40 +96,67 @@ body, html {
   height: 50px;
 }
 
+/*
+  Nume naspa.
+
+  Fontul il pui la elementul care contine tot textul cu acelasi stil, in cazul asta este .menu
+*/
 .item {
   padding: 0;
   margin: 0;
   font-size: 15px;
   font-family: Merriweather;
-  color: Black
+  color: Black /* ai uitat un punct si virgula */
 }
 
+/*
+  Nume naspa,
+
+  La font trebuie sa pui mereu si familia, in cazul asta este serif.
+  https://fonts.google.com/specimen/Merriweather?selection.family=Merriweather
+
+
+  Nu mai pozitiona cu '%' fiindca '%' e mereu diferit in functie de rezolutie.
+  Ori pozitionezi cu pixeli ori cu flexbox. In cazul asta poti sa ii dai bottom: 50px; sau cat vrei.
+
+  Nu mai centra cu left si transform.
+*/
 .div-caption {
   position: absolute;
-  top: 80%;
-  left: 50%;
+  top: 80%; /* Nu mai pozitiona cu % */
+  left: 50%; 
   transform: translate(-50%, -50%);
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 2px;
-  font-family: Merriweather;
+  font-family: Merriweather; /* font-family: 'Merriweather', serif; */
   color: Black;
   z-index: 100;
 }
 
-h2 {
+/* Nu mai targeta taguri, mai bine faci o clasa si o aplici. Astfel codul este mai reutilizabil */
+h2 { 
   margin: 0;
   padding: 32px 0;
   text-align: center;
   color: black;
-  font-style: Merriweather;
-  background-color: hsl(42, 97%, 53%);
+  font-style: Merriweather; /* font-family: 'Merriweather', serif; */
+  background-color: hsl(42, 97%, 53%); /* Foloseste rgba  */
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 40px;
   border-bottom: 2px solid .2b1c13;
 }
 
+/* Ai nume foarte generice la toate clasele, treci peste toate si incearca sa le redenumesti sa faca sens */
+/* Daca ai o pagina mare si pui inca un 'wrapper' cum il denumesti? 'wrapper2'? Incearca ceva biography__wrapper.
+Pastrezi functia elementului, dar ii dai si un scop.
+
+Tutoriale de denumit:
+http://getbem.com/naming/
+https://css-tricks.com/bem-101/
+
+*/
 .wrapper {
   width: 90%;
   max-width: 1000px;
@@ -97,7 +166,7 @@ h2 {
 }
 
 .left-column {
-  visibility: visible;
+  visibility: visible; /* nu iti trebuie asta, pui display: block in locu ei si stergi si visibility din media query */
   height: 1433px;
   width: 340px;
   padding-right: 50px;
@@ -111,21 +180,25 @@ h2 {
   width: 100%;
 }
 
+/* Nu mai targeta taguri */
 h5 {
   font-size: 12px;
-  border-bottom: 1px solid .e2d3cb;
-  border-top: 1px dashed .e2d3cb;
+  border-bottom: 1px solid .e2d3cb; /* '#' nu punct */
+  border-top: 1px dashed .e2d3cb; /* '#' nu punct */
   color: black;
   padding: 5px 0;
   display: block;
-  font-size: 0.83em;
-  margin-block-start: 1.67em;
+  font-size: 0.83em; /* Ai doua font size-uri */
+  margin-block-start: 1.67em; /* Nu mai folosi astea, sunt prea avansate */
   margin-block-end: 1.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
 }
 
+/* 
+Nu mai targeta taguri, si mai jos aia foarte multi selectori care targeteaza taguri
+*/
 .left-column p {
   color: black;
   line-height: 20px;
@@ -152,9 +225,9 @@ h5 {
 }
 
 .bio h4 {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Ai 3 fonturi aiurea */
   font-size: 18px;
-  border-bottom: 2px solid .e2d3cb;
+  border-bottom: 2px solid .e2d3cb; /* #  */
   border-top: 1px dashed .e2d3cb;
   color: black;
   width: 100%;
@@ -164,7 +237,8 @@ h5 {
 }
 
 .coaching-page {
-  display: flex;
+  display: flex; /* Ii dai flex si nu faci nimic cu el? Daca folosesti optiunile default macar pune-le 
+  sa fie codul mai citibil.  */
 }
 
 .box {
@@ -181,7 +255,7 @@ h5 {
   width: 100%;
   height: 100%;
   padding: 10px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 .tribute-link {
@@ -222,6 +296,24 @@ h5 {
   flex-direction: column;
 }
 
+/*
+ Fii atent, ca sa nu fie prea mari media query-urile, poti organiza codul in sectiuni gen:
+
+ 1. Menu + Landing
+  1b. Media Queries for #1
+ 2. Biography
+  2b. Media Queries for #2
+
+ etc.
+
+ Si pui si commenturi intre sectiuni gen:
+*/
+
+/*****************
+  BIOGRAPHY
+*/
+
+
 @media screen and (max-width:450px) {
   .coaching-page {
     flex-direction: column;
@@ -229,7 +321,7 @@ h5 {
 
   .menu {
     position: absolute;
-    top: 5%;
+    top: 5%; /* nu mai pozitiona cu % */
     width: 50px;
     height: 200px;
   }
@@ -257,7 +349,7 @@ h5 {
     font-size: 30px;
     top: 80%;
     left: 18%;
-    transform: translate(-0, -0);
+    transform: translate(-0, -0); /* nu cred ca face sens asta? Nu stiu de ce iti trebuie, explica-mi daca ai idee. */
   }
 
   .left-column {
@@ -266,11 +358,11 @@ h5 {
   }
 
   .wrapper {
-    width: 90%;
-    max-width: 1000vh;
+    width: 90%; /* Nu inteleg de ce ai width: 90% si max-width in acelasi timp. TODO: Vezi la urm review */
+    max-width: 1000vh; /* 1000 in loc de 100, as sta departe de max-width. Foloseste direct width: 100% */ 
     margin: 0 auto;
-    padding: 0px;
-    padding-top: 30px;
+    padding: 0px; /* padding: 30px 0 0 0; ca sa ai 1 linie in loc de 2. Ordinea la padding: top right bottom left */
+    padding-top: 30px; 
     display: flex;
   }
 
@@ -322,3 +414,13 @@ h5 {
     flex: 0 50%;
   }
 }
+
+/* 
+  Da codu prin https://jigsaw.w3.org/css-validator/ si o sa iti vezi gresilele.
+
+  Fa rename la clase si sterge tot ce nu ai idee ce face, inca mai ai chestii de la copy paste si nu am
+  atras atentia la toate ca sunt f multe. Sterge cat mai mult din cod pana ramana cat mai putin si stii
+  sa explici tot ce face.
+
+  Da fix la tot ce ti-am zis pls.
+*/
