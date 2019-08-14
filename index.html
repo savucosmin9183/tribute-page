@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gheorghe Hagi Tribute Page</title>
 </head>
 
 <body>
-  <section class="main">
-    <div class="div-img">
-      <img class="imag" src="https://image.freepik.com/free-photo/national-flag-romania-rectangular-shape-patriotic-symbol_18719-138.jpg" />
-      <img class="image" src="https://i.ibb.co/jrLBRmJ/output-onlinepngtools.png" />
-      <p class="div-caption">
-        Gheorghe Hagi
-      </p>
+  <section id="main">
+    <div class="main_page">
+      <img class="main_background" src="https://image.freepik.com/free-photo/national-flag-romania-rectangular-shape-patriotic-symbol_18719-138.jpg" alt="romania flag" />
+      <div class="title_container">
+        <img class="image_hagi" src="https://i.ibb.co/jrLBRmJ/output-onlinepngtools.png" alt="hagi pic" />
+        <h3 class="image_caption">Gheorghe Hagi</h3>
+      </div>
     </div>
-    <ul class="menu">
-      <li class="option">
-        <a href="#main"><img class="ball" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
-        <p class="item">Main</p>
+    <ul class="menu_container">
+      <li class="menu_entry">
+        <a href="#main"><img class="menu_thumbnail" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
+        <p class="menu_entry_caption">Main</p>
       </li>
-      <li class="option">
-        <a href="#bio"><img class="ball" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
-        <p class="item">Biography</p>
+      <li class="menu_entry">
+        <a href="#bio"><img class="menu_thumbnail" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
+        <p class="menu_entry_caption">Biography</p>
       </li>
-      <li class="option">
-        <a href="#coach"><img class="ball" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
-        <p class="item">Coaching</p>
+      <li class="menu_entry">
+        <a href="#coach"><img class="menu_thumbnail" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
+        <p class="menu_entry_caption">Coaching</p>
+      </li>
+      <li class="menu_entry">
+        <a href="#academy"><img class="menu_thumbnail" src="http://pngimg.com/uploads/football/football_PNG52760.png" alt="football" /></a>
+        <p class="menu_entry_caption">Academy</p>
       </li>
     </ul>
-    <section class="bio">
+    <section id="bio">
 
       <h2>Biography</h2>
       <div class="wrapper">
         <div class="left-column">
           <div class="side-info">
-            <div class="img-Hagi">
-              <img class="hagi-pic" src="http://4.bp.blogspot.com/_e-e5V512VaE/SpkKiPRs-QI/AAAAAAAAB6c/Y5zyeL_ksBE/s400/hagi2.jpg" alt"picture hagi" />
-            </div>
+            <img class="bio_image" src="http://4.bp.blogspot.com/_e-e5V512VaE/SpkKiPRs-QI/AAAAAAAAB6c/Y5zyeL_ksBE/s400/hagi2.jpg" alt="picture hagi" />
             <h5>Name</h5>
             <p>Gheorghe "Gică" Hagi</p>
             <h5>Place of birth</h5>
@@ -51,12 +55,12 @@
           </div>
         </div>
         <div class="right-column">
-          <p class="big">
+          <p class="description">
             Gheorghe "Gică" Hagi is a Romanian former professional footballer, considered one of the best players in the world during the 1980s and '90s
             and the greatest Romanian footballer of all time.Galatasaray fans called him "Comandante" ("The Commander") and Romanians call him "Regele" ("The King").
             He is currently the owner and manager of Viitorul Constanța.
           </p>
-          <div class="parag-1">
+          <div class="parag">
             <h4>Club career</h4>
             <p>Born in Săcele, Hagi started his career playing for the youth teams of Farul Constanța in the 1970s, before being selected by the Romanian Football
               Federation to join the squad of Luceafărul București in 1980 for two years. In 1982, he returned to Constanța, but one year later, aged 18, he was prepared
@@ -66,7 +70,7 @@
               Cup semi-final in 1988 and the final in the following year, while Hagi finished as one of the competition's top scorers in the former edition of the tournament. Hagi and Steaua were the champions of Romania in 1987, 1988 and 1989 and as
               well as winning the Cupa României in 1987, 1988 and 1989. His strong performances had him linked with Arrigo Sacchi's Milan and Bayern Munich, but Nicolae Ceaușescu's communist government rejected any offer.</p>
           </div>
-          <div clas s="parag-2">
+          <div class="parag">
             <h4>International career</h4>
             <p>Hagi made his debut for the Romania national team at age 18 in 1983 against Norway, in Oslo. He was part of the Romanian team until 2000.</p>
             <p>Hagi took part at the 1990 World Cup and later led the Romanian team to its best ever international performance at the 1994 World Cup, where the team reached the quarterfinals before Sweden ended their run after winning the penalty
@@ -76,7 +80,7 @@
               eventual runners-up Italy.
               Hagi retired from professional football in 2001, age 36, in a game called "Gala Hagi" on 24 April. He still holds the record as Romanian national team top scorer.</p>
           </div>
-          <div class="parag-3">
+          <div class="parag">
             <h4>Style of play</h4>
             <p>A talented left-footed attacking midfielder, Hagi's playing style was frequently compared with Diego Maradona's throughout his career, due to his technical ability as well as his temperamental character and leadership.As a youth, he
               was mainly inspired by compatriots Anghel Iordănescu and Ion Dumitru.</p>
@@ -86,7 +90,7 @@
         </div>
       </div>
     </section>
-    <section class="coach">
+    <section id="coach">
       <h2>Coaching</h2>
       <div class="coaching-page">
         <div class="box">
@@ -103,7 +107,7 @@
           <div class="team">
             <h3>Galatasaray</h3>
             <p>Hagi then became manager of Galatasaray in 2004, leading the team to the Turkish Cup in 2005 final with 5–1 as a score against fierce rivals Fenerbahçe. His contract, however, was not renewed since his team was not able to win 2004–05
-              Süper Lig title over Fenerbahçe during the centennial of the club.</p></a>
+              Süper Lig title over Fenerbahçe during the centennial of the club.</p>
             <a class="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)">
               <img class="badge" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Galatasaray_Star_Logo.svg/1200px-Galatasaray_Star_Logo.svg.png" alt="Galatasaray badge" />
             </a>
@@ -113,7 +117,7 @@
           <div class="team">
             <h3>Steaua Bucuresti</h3>
             <p>From June to September 2007, Hagi coached Steaua București, had a mediocre start in the internal championship mainly due to the large number of unavailable injured players, and managed to qualify the team for the second time in line to
-              the UEFA Champions League group stages, passing two qualifying rounds. He resigned due to a long series of conflicts with club owner Gigi Becali, which also happens to be his godson.</p></a>
+              the UEFA Champions League group stages, passing two qualifying rounds. He resigned due to a long series of conflicts with club owner Gigi Becali, which also happens to be his godson.</p>
             <a class="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/FCSB">
               <img class="badge" src="https://upload.wikimedia.org/wikipedia/ro/2/28/Logo_FCSB.png" alt="Steaua badge" />
             </a>
@@ -131,6 +135,56 @@
         </div>
       </div>
     </section>
+    <section id="academy">
+      <h2>Gheorge Hagi's Academy</h2>
+      <div class="academy_container">
+        <div class="academy_box">
+          <h3>Viitorul Academy</h3>
+          <p>
+            <img class="academy_image" src="https://i.ibb.co/HtSQsfZ/sondaj-vechi-fc-viitorul-1.jpg" alt="academy image" />
+          </p>
+          <p>The Gheorghe Hagi Football Academy is a football youth academy based in Ovidiu, Constanța County, which serves as the primary youth clinic of Romanian club Viitorul Constanța.
+            Founded in 2009 by former Romanian international Gheorghe Hagi, the academy cost €11 million and is one of the biggest and most modern in Southeastern Europe, holding over 300 players, 9 training fields and other facilities.</p>
+        </div>
+        <div class="academy_box">
+          <h3>Reach</h3>
+          <p>
+            <img class="academy_image" src="https://i.ibb.co/ygsJKtM/dji-0020-resize-1.jpg" alt="academy image" />
+          </p>
+          <p>
+            <b>Office: </b>
+            +972509976682
+            <br />
+            <b>Fax: </b>
+            +972509976683
+            <br />
+            <b>E-mail: </b>
+            academiahagi@gmail.com
+          </p>
+        </div>
+        <div class="academy_box">
+          <h3>Send us a message</h3>
+          <p>Please fill the following for to send a message.</p>
+          <form class="academy_form">
+            <input type="email" name="usr_email" class="academy_input" placeholder="E-mail" required />
+            <br />
+            <input type="text" name="usr_sbj" class="academy_input" placeholder="Subject" required />
+            <br />
+            <textarea name="usr_msg" class="academy_input" cols="30" rows="10" placeholder="Enter your message..." required></textarea>
+            <br />
+            <button class="academy_button">Submit Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_div">
+        <p class="copyright">Copyright © 2019. All rights reserved. Designed by Cosmin Savu.</p>
+        <p class="disclaimer">Disclaimer: This website is based on the romanian greatest footballer Gheorghe Hagi, however, it does not belong to any official foundation or recognized organisation.
+          <br />It was originally created as a personal interactive academic / educational project for <a href="https://learn.freecodecamp.org/">Free Code Camp Academy.</a></p>
+      </div>
+    </footer>
+  </section>
 </body>
 
 </html>

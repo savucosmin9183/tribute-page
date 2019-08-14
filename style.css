@@ -4,44 +4,64 @@ body, html {
   height: 100%;
 }
 
-.div-img {
+/* MAIN PAGE CSS*/
+.main_page {
   height: 100vh;
 }
 
-.imag {
+.main_background {
   height: 100vh;
   width: 100%;
 }
 
-.image {
+.title_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 99;
 }
 
-.menu {
+.image_hagi {
+  width: 50%;
+  height: auto;
+}
+
+.image_caption {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: Merriweather;
+  color: Black;
+  margin: 0;
+}
+
+.menu_container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 99;
   padding: 0;
   margin: 0;
-  position: fixed;
-  flex-direction: column;
   width: 100px;
   height: 300px;
   background-color: rgba(0, 100, 256, 0.4);
-  justify-content: space-around;
-  top: 10%;
-  left: 0px;
   list-style-type: none;
-  z-index: 99;
 }
 
-.option {
+.menu_entry {
   text-align: center;
 }
 
-.ball {
+.menu_thumbnail {
   width: 30px;
   height: 30px;
   transition: 0.3s ease-in-out;
@@ -49,43 +69,30 @@ body, html {
   margin: 0;
 }
 
-.ball:hover {
+.menu_thumbnail:hover {
   width: 50px;
   height: 50px;
 }
 
-.item {
+.menu_entry_caption {
   padding: 0;
   margin: 0;
   font-size: 15px;
   font-family: Merriweather;
-  color: Black
-}
-
-.div-caption {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-family: Merriweather;
   color: Black;
-  z-index: 100;
 }
 
+/* BIO PAGE CSS*/
 h2 {
   margin: 0;
   padding: 32px 0;
   text-align: center;
   color: black;
-  font-style: Merriweather;
+  font-family: : Merriweather;
   background-color: hsl(42, 97%, 53%);
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 40px;
-  border-bottom: 2px solid .2b1c13;
 }
 
 .wrapper {
@@ -103,26 +110,15 @@ h2 {
   padding-right: 50px;
 }
 
-.img-Hagi {
-  visibility: visible;
-}
-
-.hagi-pic {
+.bio_image {
   width: 100%;
 }
 
 h5 {
   font-size: 12px;
-  border-bottom: 1px solid .e2d3cb;
-  border-top: 1px dashed .e2d3cb;
   color: black;
   padding: 5px 0;
   display: block;
-  font-size: 0.83em;
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
 }
 
@@ -137,7 +133,7 @@ h5 {
   margin: 0;
 }
 
-.big {
+.description {
   font-weight: 700;
   font-size: 18px;
   margin-top: 0;
@@ -147,15 +143,13 @@ h5 {
 .right-column p {
   font-size: 16px;
   line-height: 24px;
-  text-align: justify;
+  text-align: left;
   color: black;
 }
 
-.bio h4 {
+#bio h4 {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px;
-  border-bottom: 2px solid .e2d3cb;
-  border-top: 1px dashed .e2d3cb;
   color: black;
   width: 100%;
   padding: 10px 0;
@@ -163,6 +157,7 @@ h5 {
   letter-spacing: 2px;
 }
 
+/* COACH PAGE CSS*/
 .coaching-page {
   display: flex;
 }
@@ -190,24 +185,21 @@ h5 {
 }
 
 .box h3 {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0 0 10px;
   color: Black;
-  border-bottom: 2px solid .d76f38;
-  display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-weight: 400;
+  font-weight: bold;
   word-wrap: break-word;
 }
 
 .box p {
-  border-top: 1px solid .d76f38;
   font-size: 14px;
   line-height: 20px;
   color: Black;
-  margin: 0;
+  margin: 0 0 10px 10px;
   padding: 15px 0 0;
   width: 100%;
 }
@@ -222,38 +214,108 @@ h5 {
   flex-direction: column;
 }
 
+/* ACADEMY PAGE CSS*/
+
+.academy_container{
+  width: 90%;
+  max-width: 1242px;
+  padding: 50px 0;
+  margin: 0 auto;
+  display:flex;
+}
+.academy_box{
+  width:33%;
+  padding:0 20px;
+}
+
+#academy h3{
+  margin: 0;
+  padding: 0 0 10px;
+  color: black;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.academy_image{
+  width: 100%;
+  max-height: 198px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+
+}
+#academy p{
+    font-size: 14px;
+    color: black;
+    margin: 0;
+    padding: 15px 0 0;
+    line-height: 23px;
+    text-align: left;
+
+}
+.academy_input{
+    width:100%;
+    border: 1px solid black;
+    padding: 10px 0;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.academy_button{
+  float: right;
+  background: hsl(42, 97%, 53%);
+  border: 1px solid hsl(42, 97%, 53%);
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top:25px;
+}
+footer{
+  background-color: hsl(42, 97%, 53%);
+  line-height: 26px;
+}
+.footer_div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.disclaimer{
+  font-size: 13px;
+}
 @media screen and (max-width:450px) {
   .coaching-page {
     flex-direction: column;
   }
 
-  .menu {
+  .image_hagi {
+    width: 70%;
+  }
+
+  .menu_container {
     position: absolute;
     top: 5%;
     width: 50px;
     height: 200px;
   }
 
-  .ball {
+  .menu_thumbnail {
     width: 20px;
     height: 20px;
   }
 
-  .ball:hover {
+  .menu_thumbnail:hover {
     width: 30px;
     height: 30px;
   }
 
-  .item {
+  .menu_entry_caption {
     font-size: 10px;
   }
 
-  .image {
-    width: 350px;
-    height: auto;
-  }
-
-  .div-caption {
+  .image_caption {
     font-size: 30px;
     top: 80%;
     left: 18%;
@@ -278,26 +340,46 @@ h5 {
     width: 100%;
     text-align: center;
   }
+  .academy_container{
+    flex-direction: column;
+  }
+  .academy_box{
+    width: 90vw;
+    padding:0px;
+    margin-bottom:25px;
+    text-align: center;
+  }
+  #academy h3{
+    font-weight: 600;
+  }
+  .copyright{
+    margin-left: 20px;
+    line-height: normal;
+    font-size: 12px;
+  }
+  .disclaimer{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    font-size:10px;
+    line-height: normal;
+  }
 }
 
 @media screen and (min-width:451px) and (max-width:850px) {
-  .image {
-    width: 400px;
-    height: auto;
-  }
-
-  .menu {
+  .menu_container {
     position: absolute;
     top: 5%;
     width: 80px;
-    height: 300px;
+    height: 50%;
   }
 
-  .div-caption {
-    font-size: 30px;
-    top: 80%;
-    left: 50%;
-    transform: translate(-80, -50);
+  .image_hagi {
+    width: 40%;
+  }
+
+  .image_caption {
+    font-size: 35px;
   }
 
   .coaching-page {
